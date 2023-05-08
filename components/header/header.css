@@ -1,0 +1,33 @@
+header{
+    width: 100vw;
+    height: 10vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--background-color);
+    position: fixed;
+}
+
+.nav{
+    width: 30vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+#buttonhome, #buttonlogout{
+    height: 40px;
+    width: 40px;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+}
+
+
+
+
+
+
