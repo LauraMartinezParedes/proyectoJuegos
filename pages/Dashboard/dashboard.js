@@ -1,8 +1,16 @@
-import { initControler } from "../../utils/route" 
+import { initControler } from "../../utils/route";
+import { username } from "../../utils/usuario";
+
+
 import "./dashboard.css"
+
 
 // funcion template
 const template = () => `
+<div class="boxbienvenida">
+<h1>Hola ${username()} !</h1>
+</div>
+
 <div id="containerDashboard">
     <ul>
         <li>
@@ -26,6 +34,20 @@ const template = () => `
                 <h2>WhakaTopo</h2>
             </figure>
         </li>
+        <li>
+            <figure id="buttonquiz" class="figureDashboard">
+                <img src="../../public/images/quiz.png" alt="navigate to quiz"
+                id="imgquiz"/>
+                <h2>Quiz</h2>
+            </figure>
+        </li>
+        <li>
+            <figure id="buttonmemorygame" class="figureDashboard">
+                <img src="../../public/images/memory-game.png" alt="navigate to memorygame"
+                id="imgmemorygame"/>
+                <h2>Memory Game</h2>
+            </figure>
+        </li>
     </ul>
 </div>
 `;
@@ -41,11 +63,18 @@ const addListeners = () =>{
     });
     const imgwhakatopo = document.getElementById("imgwhakatopo");
     imgwhakatopo.addEventListener("click", ()=>{
-        initControler("Whakatopo");
+        initControler("whakatopo");
+    });
+    const imgquiz = document.getElementById("imgquiz");
+    imgquiz.addEventListener("click", ()=>{
+        initControler("quiz");
+    });
+    const imgmemorygame = document.getElementById("imgmemorygame");
+    imgmemorygame.addEventListener("click", ()=>{
+        initControler("memorygame");
     });
 };
 
-//llamamos al main donde queremos exportar estos datos.
 export const printTemplate = () => {
     document.querySelector("main").innerHTML = template();
     addListeners();

@@ -1,0 +1,56 @@
+.interface {
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.game {
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    cursor: crosshair;
+}
+
+.score {
+    padding: 0 48px;
+    line-height: 2;
+    border-radius: 20px;
+    color: var(--primary);
+    border: 5px solid var(--primary);
+}
+
+.hole {
+    flex: 1 0 33.33%;
+    overflow: hidden;
+    position: relative;
+}
+
+.hole:after {
+    display: block;
+    background: url("https://res.cloudinary.com/dm78sei77/image/upload/v1683640602/kisspng-cartoon-illustration-stone-5a999975dc7556.649745901520015733903_biqrwy.png") bottom center no-repeat;
+    background-size: contain;
+    content: "";
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    z-index: 2;
+    bottom: -10px;
+}
+
+.mole {
+    background: url("https://res.cloudinary.com/dm78sei77/image/upload/v1683640312/topo_zyptbf.png") bottom center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.hole.up .mole{
+    top: 0;
+}

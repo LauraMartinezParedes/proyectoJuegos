@@ -17,6 +17,15 @@
     padding-top: 10vh;
 }
 
+.boxbienvenida {
+    text-align: center;
+
+}
+.boxbienvenida> h2 {
+    font-size: 2.5rem;
+    color: black;
+}
+
 .figureDashboard {
     width: 200px;
     height: 250px;
@@ -24,7 +33,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
+}
+
 
   
 .figureDashboard img {

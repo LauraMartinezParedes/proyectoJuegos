@@ -1,0 +1,32 @@
+:root{
+  --background-color: #fefae9;
+  --primary: #00405a;
+  --secondary: #5855f1;
+  font-family: 'Prompt', sans-serif;
+}
+
+main{
+  min-height: 90vh;
+  background-color: var(--background-color);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app{
+  width: 100vw;
+  min-height: 100vh;
+}
+
+h1{
+  color: var(--primary)
+}
+h2{
+  color: var(--secondary)
+}
+p{
+  color: var(--primary)
+}

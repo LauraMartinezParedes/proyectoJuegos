@@ -10,12 +10,9 @@ export const printButtons = (types) => {
   });
   addListeners(types);
 };
-
 const addListeners = (types) => {
-
   types.forEach((type) => {
     const buttonType = document.querySelector(`.${type}`);
-
     buttonType.addEventListener("click", (e) => {
       filterPokeapi(type, "type");
     });
