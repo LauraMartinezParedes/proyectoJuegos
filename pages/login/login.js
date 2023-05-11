@@ -23,7 +23,6 @@ const addListeners = () =>{
 }
 
 export const printTemplate = () => {
-  console.log("entro")
   document.querySelector("main").innerHTML = template();
     if (!localStorage.getItem("user"))
     document.querySelector("nav").style.display = "none";
