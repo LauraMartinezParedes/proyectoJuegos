@@ -15,21 +15,21 @@ const template = () => `
     <ul>
         <li>
             <figure id="buttonpokeapi" class="figureDashboard">
-                <img src="./images/pikachu.png" alt="navigate to pokemon" 
+                <img src="https://res.cloudinary.com/dm78sei77/image/upload/v1683821746/pikachu_stj2ej.png" alt="navigate to pokemon" 
                 id="imgpikachu" />
                 <h2>Pokemon</h2>
             </figure>
         </li>
         <li>
             <figure id="buttonwhakatopo" class="figureDashboard">
-                <img src="./images/whakatopo.png/" alt="navigate to whakatopo"
+                <img src=".https://res.cloudinary.com/dm78sei77/image/upload/v1683821741/whakatopo_sxwhex.png" alt="navigate to whakatopo"
                 id="imgwhakatopo"/>
                 <h2>WhakaTopo</h2>
             </figure>
         </li>
         <li>
             <figure id="buttonmemorygame" class="figureDashboard">
-                <img src="../../public/images/memory-game.png" alt="navigate to memorygame"
+                <img src="https://res.cloudinary.com/dm78sei77/image/upload/v1683821615/memory-game_qpfdus.png" alt="navigate to memorygame"
                 id="imgmemorygame"/>
                 <h2>Memory Game</h2>
             </figure>

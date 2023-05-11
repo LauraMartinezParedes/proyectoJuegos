@@ -13,7 +13,7 @@ const template = () =>{
         alt="logout" 
         id="buttonlogout"/>
         
-        <img src="../public/images/noche.png" alt="noche" 
+        <img src="https://res.cloudinary.com/dm78sei77/image/upload/v1683821625/noche_gu8x2g.png" alt="noche" 
         id="noche" />
     </nav>
     `
@@ -24,9 +24,9 @@ const addListenersTheme = () =>{
         const toggleTheme = document.querySelector("body");
         toggleTheme.classList.toggle("darkTheme");
         if (!toggleTheme.classList.contains("darkTheme")){
-            noche.src="../public/images/sol.png";
+            noche.src="https://res.cloudinary.com/dm78sei77/image/upload/v1683821702/sol_z0jobr.png";
         } else{
-            noche.src="../public/images/noche.png";
+            noche.src="https://res.cloudinary.com/dm78sei77/image/upload/v1683821625/noche_gu8x2g.png";
         }
         
     })
