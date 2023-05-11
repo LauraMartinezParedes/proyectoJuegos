@@ -22,7 +22,7 @@ const template = () => `
         </li>
         <li>
             <figure id="buttonwhakatopo" class="figureDashboard">
-                <img src=".https://res.cloudinary.com/dm78sei77/image/upload/v1683821741/whakatopo_sxwhex.png" alt="navigate to whakatopo"
+                <img src="https://res.cloudinary.com/dm78sei77/image/upload/v1683821741/whakatopo_sxwhex.png" alt="navigate to whakatopo"
                 id="imgwhakatopo"/>
                 <h2>WhakaTopo</h2>
             </figure>
