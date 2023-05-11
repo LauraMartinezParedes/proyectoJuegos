@@ -6,6 +6,7 @@
     transform-style: preserve-3d;
     transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+    cursor: pointer;
   }
   
 .face,
@@ -24,6 +25,13 @@
   transform: rotateY(180deg);
 }
 
+.final{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .resetButton{
   width: 30vw;
   height: 5vh;
@@ -32,4 +40,5 @@
   color: var(--background-color);
   font-family: 'Prompt', sans-serif;
   font-weight: 400;
+  cursor: pointer;
 }

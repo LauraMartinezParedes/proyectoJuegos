@@ -50,10 +50,10 @@ export const resetGame = (move) => {
     remove.innerHTML = "";
     remove.innerHTML = `
     <div class="final">
-    <h2>MOVE: ${move}</h2> 
+    <h2>${move} MOVIMIENTOS</h2>
+    <p>¿Puedes hacerlo en menos movimientos? Vuelve a intentarlo!</p>
     <button class="resetButton">Play again</button> 
     </div>`;
-    
     addListener(move);
   }
 };

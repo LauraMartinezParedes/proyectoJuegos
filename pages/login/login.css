@@ -2,6 +2,18 @@
     padding-top: 10vh;
     height: 90vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#buttonLogin{
+    width: 8vw;
+    border-radius: 20%;
+    background-color: var(--secondary);
+    border: solid 1px var(--background-color);
+    color: var(--background-color);
+    font-family: 'Prompt', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
 }

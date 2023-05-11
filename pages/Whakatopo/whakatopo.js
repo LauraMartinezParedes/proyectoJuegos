@@ -72,7 +72,7 @@ const startGame = () => {
       const div = document.querySelector(".game");
       div.innerHTML="";
       const h2= document.createElement("h2")
-      h2.innerHTML="Has acabado";
+      h2.innerHTML="Puedes hacerlo mejor, vuelve a intentarlo";
       const button= document.createElement("button");
       button.innerHTML="Play Again";
       button.setAttribute("class", "playAgainTopo")

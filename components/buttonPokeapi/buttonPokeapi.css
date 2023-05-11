@@ -3,8 +3,10 @@
 }
 
 .buttonFilter{
+    
     width: 50px;
     height: 25px;
+    border-color: var(--background-color);
 }
 
 .buttonFilter{

@@ -21,24 +21,10 @@ const template = () => `
             </figure>
         </li>
         <li>
-            <figure id="buttonhangman" class="figureDashboard">
-                <img src="../../public/images/hangman.png" alt="navigate to hangman"
-                id="imghangman"/>
-                <h2>Hangman</h2>
-            </figure>
-        </li>
-        <li>
             <figure id="buttonwhakatopo" class="figureDashboard">
                 <img src="./images/whakatopo.png/" alt="navigate to whakatopo"
                 id="imgwhakatopo"/>
                 <h2>WhakaTopo</h2>
-            </figure>
-        </li>
-        <li>
-            <figure id="buttonquiz" class="figureDashboard">
-                <img src="../../public/images/quiz.png" alt="navigate to quiz"
-                id="imgquiz"/>
-                <h2>Quiz</h2>
             </figure>
         </li>
         <li>
@@ -57,17 +43,9 @@ const addListeners = () =>{
     imgpikachu.addEventListener("click", ()=>{
         initControler("pokeapi");
     });
-    const imghangman = document.getElementById("imghangman");
-    imghangman.addEventListener("click", ()=>{
-        initControler("Hangman");
-    });
     const imgwhakatopo = document.getElementById("imgwhakatopo");
     imgwhakatopo.addEventListener("click", ()=>{
         initControler("whakatopo");
-    });
-    const imgquiz = document.getElementById("imgquiz");
-    imgquiz.addEventListener("click", ()=>{
-        initControler("quiz");
     });
     const imgmemorygame = document.getElementById("imgmemorygame");
     imgmemorygame.addEventListener("click", ()=>{
