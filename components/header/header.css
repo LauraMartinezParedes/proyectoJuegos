@@ -2,12 +2,16 @@
     --background-color: #fefae9;
     --primary: #00405a;
     --secondary: #5855f1;
+    --third-color: #00415a5f;
     font-family: 'Prompt', sans-serif;
+
   }
   
 .darkTheme{
     --background-color:#00405a;
     --primary: #fefae9;
+    --secondary: var(--primary);
+    --third-color: #55bce5ca;
 }
 
 #noche{
@@ -24,7 +28,8 @@ header{
     padding: 2rem;
     background-color: var(--background-color);
     position: fixed;
-    
+    border-bottom: solid 1px;
+    border-color: var(--third-color)
 }
 
 h1{

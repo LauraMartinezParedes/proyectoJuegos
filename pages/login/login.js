@@ -2,9 +2,12 @@ import { initControler } from "../../utils/route";
 import "./login.css"
 
 const template = () =>
-    `<div class="login">
+    `
+    <div class="login">
+    <img src="https://res.cloudinary.com/dm78sei77/image/upload/v1683815045/RANDOM_GAME-removebg-preview_i8gkbg.png"
+    alt="login" class="imglogin"/>
     <input type="text" name="" id="" />
-    <button id="buttonLogin">login</button>
+    <button id="buttonLogin"><h3>login</h3></button>
     </div>
   `;
     

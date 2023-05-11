@@ -5,9 +5,9 @@ const template = () =>{
         <img src="./images/juego-logo.png" alt="logo" class="logo" />
         <h1>Random Games</h1>
     <nav>
-        <img src="./images/home.png" 
-        alt="home" 
-        id="buttonhome"/>
+         <img src="./images/home.png" 
+         alt="home" 
+         id="buttonhome"/>
 
         <img src="./images/logout.png/"
         alt="logout" 
