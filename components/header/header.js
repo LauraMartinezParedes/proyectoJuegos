@@ -12,9 +12,26 @@ const template = () =>{
         <img src="./images/logout.png/"
         alt="logout" 
         id="buttonlogout"/>
+        
+        <img src="../public/images/noche.png" alt="noche" 
+        id="noche" />
     </nav>
     `
 }
+const addListenersTheme = () =>{
+    const darkTheme = document.querySelector("#noche")
+    darkTheme.addEventListener("click",()=>{
+        const toggleTheme = document.querySelector("body");
+        toggleTheme.classList.toggle("darkTheme");
+        if (!toggleTheme.classList.contains("darkTheme")){
+            noche.src="../public/images/sol.png";
+        } else{
+            noche.src="../public/images/noche.png";
+        }
+        
+    })
+}
+
 
 const addListeners = () => {
     // evento de el boton de cambiar de color
@@ -36,6 +53,7 @@ const addListeners = () => {
 export const printTemplate = () => {
     document.querySelector("header").innerHTML = template()
     addListeners();
+    addListenersTheme();
 }
 
 

@@ -1,5 +1,5 @@
 import { cardMemory } from "../../components/cardMemory/cardmemory";
-import "./memorygame"
+import "./memorygame.css"
 
 const template = () => `
 <div class="gameMemory">

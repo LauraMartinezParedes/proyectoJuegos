@@ -1,6 +1,6 @@
-import { getPokemon } from "../services/pokeapi.service";
+import { getPokemon } from "../../services/pokeapi.service";
 import { typePokemon } from "./typePokeapi";
-import { createAndPrintFigure } from "../components/cardPokemon/cardPokemon";
+import { createAndPrintFigure } from "../../components/cardPokemon/cardPokemon";
 
 let dataGlobal;
 

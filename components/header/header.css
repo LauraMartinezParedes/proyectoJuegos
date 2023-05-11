@@ -1,24 +1,47 @@
+:root{
+    --background-color: #fefae9;
+    --primary: #00405a;
+    --secondary: #5855f1;
+    font-family: 'Prompt', sans-serif;
+  }
+  
+.darkTheme{
+    --background-color:#00405a;
+    --primary: #fefae9;
+}
+
+#noche{
+    width: 30px;
+    cursor: pointer;
+}
+
 header{
     width: 100vw;
-    height: 10vh;
+    height: 15vh;
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 2rem;
     background-color: var(--background-color);
     position: fixed;
+    
 }
 
-.nav{
-    width: 30vw;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
+h1{
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
 
 #buttonhome, #buttonlogout{
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
 }
 
 .logo{
@@ -26,8 +49,13 @@ header{
     width: 100px;
 }
 
-
-
-
-
-
+@media screen and (max-width: 544px){
+    .logo{
+        height: 60px;
+        width: 60px;
+    }
+    #buttonhome, #buttonlogout, #noche{
+        height: 25px;
+        width: 25px;
+    }
+}

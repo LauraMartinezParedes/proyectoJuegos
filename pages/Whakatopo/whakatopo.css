@@ -1,14 +1,28 @@
 .interface {
-    padding-top: 10rem;
+    padding-top: 8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
+}
+
+h2{
+    padding-top: 2rem;
+}
+
+#startGame{
+    width: 20vw;
+    height: 5vh;
+    background-color: var(--secondary);
+    border: solid 1px var(--background-color);
+    color: var(--background-color);
+    font-family: 'Prompt', sans-serif;
+    font-weight: 400;
 }
 
 .game {
     width: 600px;
-    height: 500px;
+    height: 400px;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -30,27 +44,84 @@
 }
 
 .hole:after {
+    margin-top: 6rem;
     display: block;
-    background: url("https://res.cloudinary.com/dm78sei77/image/upload/v1683640602/kisspng-cartoon-illustration-stone-5a999975dc7556.649745901520015733903_biqrwy.png") bottom center no-repeat;
+    background: url("https://res.cloudinary.com/dm78sei77/image/upload/v1683720877/Pngtree_vector_black_circle_6195114_jmmlhx.png") bottom center no-repeat;
     background-size: contain;
     content: "";
-    width: 100%;
-    height: 120px;
+    width: 110%;
+    height: 250px;
     position: absolute;
-    z-index: 2;
-    bottom: -10px;
+    bottom: -14px;
+}
+
+.volverajugar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.playAgainTopo{
+    width: 30vw;
+    height: 5vh;
+    background-color: var(--secondary);
+    border: solid 1px var(--background-color);
+    color: var(--background-color);
+    font-family: 'Prompt', sans-serif;
+    font-weight: 400;
 }
 
 .mole {
-    background: url("https://res.cloudinary.com/dm78sei77/image/upload/v1683640312/topo_zyptbf.png") bottom center no-repeat;
+    background: url("https://res.cloudinary.com/dm78sei77/image/upload/v1683640312/topo_zyptbf.png") center center no-repeat;
     background-size: 100%;
     position: absolute;
     top: 100%;
-    width: 100%;
+    width: 80%;
     height: 100%;
+    z-index: 2;
     transition: all 0.5s;
 }
 
 .hole.up .mole{
     top: 0;
+    left: 28px;
 }
+
+@media screen and (max-width: 432px) {
+    .game {
+        width: 300px;
+        height: 250px;
+    }
+    .title-wakatopo {
+        font-size: 45px;
+        margin-top: 10px;
+      }
+      .mole {
+        background: url("https://res.cloudinary.com/dm78sei77/image/upload/v1683640312/topo_zyptbf.png") center center no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        transition: all 0.5s;
+    }
+    .hole.up .mole{
+        top: 0;
+        left: 0px;
+    }
+      .hole:after {
+        display: block;
+        background: url("https://res.cloudinary.com/dm78sei77/image/upload/v1683720877/Pngtree_vector_black_circle_6195114_jmmlhx.png") bottom center no-repeat;
+        background-size: contain;
+        content: "";
+        width: 100%;
+        height: 90px;
+        position: absolute;
+        z-index: 0;
+    }
+
+}
+

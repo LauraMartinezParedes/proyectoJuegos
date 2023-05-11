@@ -17,11 +17,19 @@
 }
   
 .back {
-  background: white;
   backface-visibility: hidden;
 }
   
 .toggleCard {
   transform: rotateY(180deg);
 }
-  
+
+.resetButton{
+  width: 30vw;
+  height: 5vh;
+  background-color: var(--secondary);
+  border: solid 1px var(--background-color);
+  color: var(--background-color);
+  font-family: 'Prompt', sans-serif;
+  font-weight: 400;
+}

@@ -1,4 +1,5 @@
-import { randomTime } from "../../utils/randomtime"
+import { initControler } from "../../utils/route";
+import { randomTime } from "../../utils/whakatopo/randomtime";
 import "./whakatopo.css"
 
 let lastHole; 
@@ -11,6 +12,7 @@ const template = () => `
     <span class="score">0</span>
     <button id="startGame">Let's Start</button>
   </div>
+  <div class="volverajugar"></div>
   <div class="game">
     <div class="hole hole1">
       <div class="mole"></div>
@@ -67,6 +69,16 @@ const startGame = () => {
   
     setTimeout(() => {
       timeUp = true;
+      const div = document.querySelector(".game");
+      div.innerHTML="";
+      const h2= document.createElement("h2")
+      h2.innerHTML="Has acabado";
+      const button= document.createElement("button");
+      button.innerHTML="Play Again";
+      button.setAttribute("class", "playAgainTopo")
+      const div2= document.querySelector(".volverajugar")
+      div2.append(h2, button);
+      addListeners2();
     }, 15000);
 };
 
@@ -83,6 +95,12 @@ const addListeners = () => {
     document.querySelector("#startGame").addEventListener("click", startGame);
 };
 
+const addListeners2 = ()=>{
+  const button = document.querySelector(".playAgainTopo");
+  button.addEventListener("click", ()=>{
+    initControler("whakatopo");
+  })
+}
 export const printTemplate = () => {
     document.querySelector("main").innerHTML = template();
     addListeners();

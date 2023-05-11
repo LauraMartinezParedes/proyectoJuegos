@@ -1,6 +1,8 @@
+
 import { printButtons } from "../../components/buttonPokeapi/buttonPokeapi";
 import { createAndPrintFigure } from "../../components/cardPokemon/cardPokemon";
-import { dataPokemon, filterPokeapi } from "../../utils/dataPokemon";
+import { dataPokemon, filterPokeapi } from "../../utils/pokemon/dataPokemon";
+import { Loading } from "../loading/loading";
 import "./pokeapi.css"
 
 let dataServicePokemons;
@@ -12,17 +14,21 @@ const template = () =>
     <div id="containerFilter">
       <div id="filterButton"></div>
       <input type="text" id="inputPokemon" placeholder="Busca tu pokemon favorito"/>
-    </div>
-
+      <div class="spinner"></div>
+      </div>
+    
     <div class="galleryPokemon"></div>
   </div>`;
 
+
 export const dataService = async () => {
+  document.querySelector(".spinner").innerHTML=Loading();
   const getData = await dataPokemon();
   const { pokemon, type } = getData; 
   console.log(pokemon);
   dataServicePokemons = pokemon;
   typeGlobal = type;
+  document.querySelector(".spinner").innerHTML="";
   createAndPrintFigure(pokemon);
   printButtons(type);
 };

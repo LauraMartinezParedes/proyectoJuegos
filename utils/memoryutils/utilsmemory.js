@@ -1,6 +1,6 @@
 
 import { getImages } from "./dataMemory";
-import { initControler } from "./route";
+import { initControler } from "../route";
 
 export const randomize = () => {
   const cardData = getImages();
@@ -44,13 +44,16 @@ export const restart = () => {
 
 export const resetGame = (move) => {
   const finish = document.querySelectorAll(".toggleCard");
-  if (finish.length === 16) {
-    setTimeout(() => alert("Has ganado"), 1000);
+  if (finish.length === 12) {
+    setTimeout(() => 1000);
     const remove = document.querySelector("section");
     remove.innerHTML = "";
     remove.innerHTML = `
+    <div class="final">
     <h2>MOVE: ${move}</h2> 
-    <button class="resetButton">Play again</button> `;
+    <button class="resetButton">Play again</button> 
+    </div>`;
+    
     addListener(move);
   }
 };
@@ -58,6 +61,6 @@ export const resetGame = (move) => {
 const addListener = () => {
   const buttonReset = document.querySelector(".resetButton");
   buttonReset.addEventListener("click", () => {
-    initControler("Memory");
+    initControler("memorygame");
   });
 };

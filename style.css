@@ -5,6 +5,11 @@
   font-family: 'Prompt', sans-serif;
 }
 
+.darktheme{
+  --background-color:#00405a;
+  --primary: #fefae9;
+  --secondary: #fffdf8;
+}
 main{
   min-height: 90vh;
   background-color: var(--background-color);
@@ -30,3 +35,4 @@ h2{
 p{
   color: var(--primary)
 }
+

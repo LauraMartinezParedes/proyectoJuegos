@@ -8,7 +8,7 @@ import "./dashboard.css"
 // funcion template
 const template = () => `
 <div class="boxbienvenida">
-<h1>Hola ${username()} !</h1>
+<h2>Hola ${username()} !</h2>
 </div>
 
 <div id="containerDashboard">

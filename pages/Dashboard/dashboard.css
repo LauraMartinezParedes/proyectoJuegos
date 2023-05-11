@@ -1,6 +1,5 @@
 #containerDashboard{
     width: 100vw;
-    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,22 +7,21 @@
 
 #containerDashboard ul{
     width: 100vw;
-    height: 90vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    padding-top: 10vh;
+    padding: 1rem;
 }
 
 .boxbienvenida {
     text-align: center;
+    padding-top: 15vh;
 
 }
 .boxbienvenida> h2 {
     font-size: 2.5rem;
-    color: black;
 }
 
 .figureDashboard {

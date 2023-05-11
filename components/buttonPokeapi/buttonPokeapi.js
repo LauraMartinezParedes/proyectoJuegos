@@ -1,4 +1,4 @@
-import { filterPokeapi } from "../../utils/dataPokemon";
+import { filterPokeapi } from "../../utils/pokemon/dataPokemon";
 import "./buttonPokeapi.css";
 
 export const printButtons = (types) => {

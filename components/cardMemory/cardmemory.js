@@ -1,6 +1,7 @@
 
 import { initControler } from "../../utils/route";
-import { checkCards, randomize, resetGame } from "../../utils/utilsmemory";
+
+import { checkCards, randomize, resetGame } from "../../utils/memoryutils/utilsmemory"
 import "./cardmemory.css"
 
   
@@ -34,12 +35,12 @@ addListeners(card);
 });
     };
     
-    const addListeners = (card) => {
-card.addEventListener("click", (e) => {
-move++;
-card.classList.toggle("toggleCard");
-checkCards(e);
-resetGame(move);
+const addListeners = (card) => {
+    card.addEventListener("click", (e) => {
+        move++;
+        card.classList.toggle("toggleCard");
+        checkCards(e);
+        resetGame(move);
 });
-    };
+};
     
